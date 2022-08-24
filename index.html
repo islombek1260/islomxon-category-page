@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    
+    <h1 class="visually-hidden">E-commerce: Home page</h1>
     <header class="site-header">
         <div class="container">
             <div class="site-header-wrapper">
@@ -43,7 +43,7 @@
                                 <li><a href="#">Something</a></li>
                                 <li><a href="#">Something</a></li>
                             </ul>
-                            <input class="form-control rounded" type="text" name="user_search"  aria-label="Text input with dropdown button" placeholder="Search Products, categories ...">
+                            <input class="form-control rounded" type="search" name="user_search"  aria-label="Text input with dropdown button" placeholder="Search Products, categories ...">
                             <span class="form__search"></span>
                         </div>
                     </form>
@@ -76,7 +76,7 @@
                             <li><a href="#">Link</a></li>
                         </ul>
                     </li>
-
+                    
                     <li class="site-header__item">
                         <a class="text-decoration-none text-dark fw-bold" href="#">Fruit and vegetables</a>
                         <ul class="site-header__sublist list-unstyled position-absolute">
@@ -86,7 +86,7 @@
                             <li><a href="#">Link</a></li>
                         </ul>
                     </li>
-
+                    
                     <li class="site-header__item">
                         <a class="text-decoration-none text-dark fw-bold" href="#">Meat and fish</a>
                         <ul class="site-header__sublist list-unstyled position-absolute">
@@ -96,7 +96,7 @@
                             <li><a href="#">Link</a></li>
                         </ul>
                     </li>
-
+                    
                     <li class="site-header__item">
                         <a class="text-decoration-none text-dark fw-bold" href="#">Drinks</a>
                         <ul class="site-header__sublist list-unstyled position-absolute">
@@ -106,7 +106,7 @@
                             <li><a href="#">Link</a></li>
                         </ul>
                     </li>   
-
+                    
                     <li class="site-header__item">
                         <a class="text-decoration-none text-dark fw-bold" href="#">Kitchen</a>
                         <ul class="site-header__sublist list-unstyled position-absolute">
@@ -116,7 +116,7 @@
                             <li><a href="#">Link</a></li>
                         </ul>
                     </li> 
-
+                    
                     <li class="site-header__item">
                         <a class="text-decoration-none text-dark fw-bold" href="#">Special nutrition</a>
                         <ul class="site-header__sublist list-unstyled position-absolute">
@@ -126,7 +126,7 @@
                             <li><a href="#">Link</a></li>
                         </ul>
                     </li> 
-
+                    
                     <li class="site-header__item">
                         <a class="text-decoration-none text-dark fw-bold" href="#">Baby</a>
                         <ul class="site-header__sublist list-unstyled position-absolute">
@@ -136,7 +136,7 @@
                             <li><a href="#">Link</a></li>
                         </ul>
                     </li> 
-
+                    
                     <li class="site-header__item">
                         <a class="text-decoration-none text-dark fw-bold" href="#">Pharmacy</a>
                         <ul class="site-header__sublist list-unstyled position-absolute">
@@ -151,9 +151,48 @@
         </div>
     </header>
     
-    <!-- <main></main> -->
+    <main class="site-main">
+        <section class="category-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <h3 class="category-menu__heading">
+                            Category menu
+                        </h3>
+                        <ul class="list-unstyled mt-1">
+                            <li class="mb-2">
+                                <a class="text-success" href="#">Bakery</a>
+                            </li>
+                            
+                            <li class="mb-2">
+                                <a class="text-success" href="#">Fruit and vegetables</a>
+                            </li>
+                            
+                            <li class="mb-2">
+                                <a class="text-success" href="#">Meat and fish</a>
+                            </li>
+                            
+                            <li class="mb-2">
+                                <a class="text-success" href="#">Drinks</a>
+                            </li>
+                            
+                            <li class="mb-2">
+                                <a class="text-success" href="#">Kitchen</a>
+                            </li>
+                        </ul>
+
+                        <a class="category-menu__link" href="#">More categories</a>
+                    </div>
+
+
+                    <div class="category-menu__card col-4"></div>
+                    <div class="category-menu__card col-4"></div>
+                </div>
+            </div>
+        </section>
+    </main>
     
-    <!-- <footer></footer> -->
+    <footer class="site-footer"></footer>
     
     
     <script src="./js/bootstrap.min.js"></script>
