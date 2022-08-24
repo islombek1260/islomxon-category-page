@@ -13,19 +13,140 @@
     <header class="site-header">
         <div class="container">
             <div class="site-header-wrapper">
-                <div class="site-header__top d-flex align-items-center justify-content-between">
-                    <div>
+                <div class="site-header__top pb-3 pt-3 d-flex align-items-center justify-content-between border-bottom">
+                    <div class="site-header__top-wrapper">
                         <a class="text-decoration-none text-success" href="#">Chat with us</a>
                         <a class="text-decoration-none text-dark ms-4 me-4" href="tel:+420336775664">+420 336 775 664</a>
-                        <a class="text-decoration-none text-dark" href="mail:info@freshnesecom.com">info@freshnesecom.com</a>
+                        <a class="text-decoration-none text-dark" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a>
                     </div>
-
-                    <div>
+                    
+                    <div class="site-header__top-wrapper">
                         <a class="text-decoration-none text-success" href="#">Blog</a>
-                        <a class="text-decoration-none text-success" href="#">About Us</a>
+                        <a class="text-decoration-none text-success ms-4 me-4" href="#">About Us</a>
                         <a class="text-decoration-none text-success" href="#">Careers</a>
                     </div>
                 </div>
+                
+                <div class="site-header__center d-flex justify-content-between">
+                    <a class="site-header__logo" href="./index.html">
+                        <img src="./images/site-logo.svg" 
+                        width="177" 
+                        height="50" 
+                        alt="E-commerce's logo">
+                    </a>
+                    
+                    <form class="form" action="https://echo.htmlacademy.ru/courses" method="post" autocomplete="off">
+                        <div class="input-group mb-3">  
+                            <a class="form__button btn btn-outline-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">All categories</a>
+                            <ul class="form__list position-absolute list-unstyled top-100">
+                                <li><a href="#">Something</a></li>
+                                <li><a href="#">Something</a></li>
+                                <li><a href="#">Something</a></li>
+                            </ul>
+                            <input class="form-control rounded" type="text" name="user_search"  aria-label="Text input with dropdown button" placeholder="Search Products, categories ...">
+                            <span class="form__search"></span>
+                        </div>
+                    </form>
+                    
+                    <ul class="form__users d-flex ps-0 align-items-center list-unstyled">
+                        <li class="me-5">
+                            <img src="./images/user-icon.svg" width="25" height="20" 
+                            alt="User icon">
+                        </li>
+                        <li class="badge-parent position-relative">
+                            <span class="badge-my text-light position-absolute top-100 start-0 ps-2 pe-2 translate-middle border border-light rounded-pill">
+                                4
+                            </span>
+                            <img src="./images/cart-icon.svg" width="25" height="18" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="site-header__bottom">
+            <div class="container">
+                <ul class="d-flex align-items-center justify-content-between site-header__list list-unstyled">
+                    <li class="site-header__item">
+                        <a class="text-decoration-none text-dark fw-bold" href="#">Bakery</a>
+                        <ul class="site-header__sublist list-unstyled position-absolute">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="site-header__item">
+                        <a class="text-decoration-none text-dark fw-bold" href="#">Fruit and vegetables</a>
+                        <ul class="site-header__sublist list-unstyled position-absolute">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="site-header__item">
+                        <a class="text-decoration-none text-dark fw-bold" href="#">Meat and fish</a>
+                        <ul class="site-header__sublist list-unstyled position-absolute">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="site-header__item">
+                        <a class="text-decoration-none text-dark fw-bold" href="#">Drinks</a>
+                        <ul class="site-header__sublist list-unstyled position-absolute">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </li>   
+
+                    <li class="site-header__item">
+                        <a class="text-decoration-none text-dark fw-bold" href="#">Kitchen</a>
+                        <ul class="site-header__sublist list-unstyled position-absolute">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </li> 
+
+                    <li class="site-header__item">
+                        <a class="text-decoration-none text-dark fw-bold" href="#">Special nutrition</a>
+                        <ul class="site-header__sublist list-unstyled position-absolute">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </li> 
+
+                    <li class="site-header__item">
+                        <a class="text-decoration-none text-dark fw-bold" href="#">Baby</a>
+                        <ul class="site-header__sublist list-unstyled position-absolute">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </li> 
+
+                    <li class="site-header__item">
+                        <a class="text-decoration-none text-dark fw-bold" href="#">Pharmacy</a>
+                        <ul class="site-header__sublist list-unstyled position-absolute">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </li> 
+                </ul>
             </div>
         </div>
     </header>
@@ -36,5 +157,6 @@
     
     
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
