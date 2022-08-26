@@ -1,0 +1,9 @@
+.site-sublist {
+  display: none;
+  width: 100%;
+  padding-top: 20px;
+  background-color: #D1D1D1;
+  text-align: center;
+  -webkit-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
+}/*# sourceMappingURL=category.css.map */
