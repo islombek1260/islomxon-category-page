@@ -723,7 +723,7 @@ li {
   margin: 30px 0 35px;
 }
 
-.price-input .field {
+.price-input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -734,16 +734,39 @@ li {
           align-items: center;
 }
 
-.field input {
-  width: 100%;
-  height: 100%;
-  outline: none;
-  font-size: 19px;
-  margin-left: 12px;
-  border-radius: 5px;
-  text-align: center;
-  border: 1px solid #999;
+.field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 109px;
+  height: 60px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
   -moz-appearance: textfield;
+}
+
+.input-max, .input-min {
+  margin: 0;
+  padding: 11px 16px 12px 21px;
+  width: 109px;
+  height: 42px;
+  font-size: 19px;
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+  -moz-appearance: textfield;
+}
+
+.separator {
+  color: #A9A9A9;
+  margin-top: 22px;
+  margin-left: 12px;
 }
 
 input[type=number]::-webkit-outer-spin-button,
@@ -778,7 +801,7 @@ input[type=number]::-webkit-inner-spin-button {
   right: 25%;
   position: absolute;
   border-radius: 5px;
-  background: #17A2B8;
+  background: #46760A;
 }
 
 .range-input {
@@ -800,11 +823,12 @@ input[type=range]::-webkit-slider-thumb {
   height: 17px;
   width: 17px;
   border-radius: 50%;
-  background: #17A2B8;
+  background-color: white;
+  border: 1px solid #D1D1D1;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   pointer-events: auto;
   -webkit-appearance: none;
-  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
 
 input[type=range]::-moz-range-thumb {
@@ -876,4 +900,85 @@ input[type=range]::-moz-range-thumb {
   background-color: #6A983C;
   border: 2px solid #46760A;
   border-radius: 12px;
+  position: relative;
+  padding-right: 40px;
+  margin-bottom: 12px;
+  min-width: 170px;
+  height: 47px;
+}
+.product-detail::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: 14px;
+  right: 15px;
+  background-image: url(../images/ic-chevron-right.svg);
+}
+
+.apply-btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 16px;
+  color: white;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  background-color: #6A983C;
+  border: 2px solid #46760A;
+  border-radius: 12px;
+}
+
+.reset-btn {
+  margin-left: 34px;
+  color: #A9A9A9;
+  border: none;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  width: 67px;
+  height: 35px;
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+
+.wish-list {
+  padding: 6px 12px;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  background: #F5F5F5;
+  border: none;
+  border-radius: 12px;
+  padding-left: 36px;
+  position: relative;
+  min-width: 170px;
+}
+.wish-list::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: 9px;
+  left: 15px;
+  background-image: url(../images/ic-actions-heart.svg);
+}
+
+.card {
+  min-width: 870px;
+  height: 282px;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.card-img {
+  border-radius: 12px;
+  width: 270px;
+  height: 280px;
 }/*# sourceMappingURL=main.css.map */
